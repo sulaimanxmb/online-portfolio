@@ -532,7 +532,8 @@ a {
 }
 
 .card-grid,
-.project-grid {
+.project-grid,
+.certificate-grid {
   display: grid;
   gap: 16px;
   margin-top: 28px;
@@ -546,12 +547,57 @@ a {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.certificate-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .content-card,
-.project-card {
+.project-card,
+.certificate-card {
   display: grid;
   align-content: start;
   gap: 14px;
   padding: 20px;
+}
+
+.certificate-card {
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--surface) 86%, transparent);
+}
+
+.certificate-preview {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 18%, transparent), transparent),
+    var(--surface-strong);
+}
+
+.certificate-preview object {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.certificate-preview a {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  padding: 18px;
+  color: var(--muted);
+  font-weight: 850;
+  text-align: center;
+}
+
+.certificate-body {
+  display: grid;
+  gap: 12px;
+  padding: 18px;
 }
 
 .card-icon {
@@ -565,10 +611,17 @@ a {
 
 .content-card h3,
 .project-card h3,
+.certificate-card h3,
 .timeline-item h3 {
   margin: 0;
   color: var(--text);
   font-size: 1.08rem;
+}
+
+.certificate-card p,
+.certificate-card small {
+  margin: 0;
+  color: var(--muted);
 }
 
 .tag-list {
@@ -677,6 +730,10 @@ a {
   .project-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .certificate-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 900px) {
@@ -749,6 +806,7 @@ a {
   .signal-row,
   .card-grid,
   .project-grid,
+  .certificate-grid,
   .timeline-item {
     grid-template-columns: 1fr;
   }

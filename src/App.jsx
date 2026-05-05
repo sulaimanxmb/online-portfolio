@@ -2,7 +2,6 @@ import { useEffect, useMemo, useState } from "react";
 import {
   ArrowUpRight,
   Award,
-  BookOpenCheck,
   CloudCog,
   Download,
   GraduationCap,
@@ -84,7 +83,6 @@ function App() {
       <SkillsSection />
       <ProjectsSection />
       <CertificationsSection />
-      <LabsSection />
       <EducationSection />
       <ResumeSection />
       <ContactSection />
@@ -260,36 +258,37 @@ function ProjectsSection() {
 
 function CertificationsSection() {
   return (
-    <section className="page-section" id="certifications">
-      <SectionHeading eyebrow="Learning" title="Certifications" />
-      <div className="timeline-list">
+    <section className="page-section" id="certificates">
+      <SectionHeading eyebrow="Proof of learning" title="Certificates" />
+      <div className="certificate-grid">
         {portfolioContent.certifications.map((certification) => (
-          <article className="timeline-item" key={certification.name}>
-            <Award size={20} />
-            <div>
+          <article className="certificate-card" key={certification.name}>
+            <div className="certificate-preview">
+              <object
+                aria-label={`${certification.name} PDF preview`}
+                data={certification.pdfPath}
+                type="application/pdf"
+              >
+                <a href={certification.pdfPath}>Open certificate PDF</a>
+              </object>
+            </div>
+            <div className="certificate-body">
+              <div className="project-topline">
+                <span>{certification.status}</span>
+                <Award size={18} />
+              </div>
               <h3>{certification.name}</h3>
               <p>{certification.issuer}</p>
+              <small>{certification.issued}</small>
+              <div className="card-actions">
+                <a href={certification.pdfPath} target="_blank" rel="noreferrer">
+                  Open PDF <ArrowUpRight size={16} />
+                </a>
+                <a href={certification.credentialUrl}>
+                  Credential <ArrowUpRight size={16} />
+                </a>
+              </div>
             </div>
-            <span>{certification.status}</span>
-          </article>
-        ))}
-      </div>
-    </section>
-  );
-}
-
-function LabsSection() {
-  return (
-    <section className="page-section" id="labs">
-      <SectionHeading eyebrow="Practice" title="Labs & Notes" />
-      <div className="card-grid">
-        {portfolioContent.labs.map((lab) => (
-          <article className="content-card" key={lab.title}>
-            <div className="card-icon">
-              <BookOpenCheck size={20} />
-            </div>
-            <h3>{lab.title}</h3>
-            <p>{lab.summary}</p>
           </article>
         ))}
       </div>

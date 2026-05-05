@@ -46,7 +46,7 @@ Most placeholder values are managed from one file:
 src/data/portfolioContent.js
 ```
 
-Edit that file to update your name, role, hero text, social links, projects, skills, certifications, labs, education, contact details, and resume path.
+Edit that file to update your name, role, hero text, social links, projects, skills, certificates, education, contact details, and resume path.
 
 When your resume is ready, add it here:
 
@@ -55,6 +55,12 @@ public/Resume.pdf
 ```
 
 The current resume link points to `/Resume.pdf`.
+
+Certificate PDF paths are also managed in `src/data/portfolioContent.js`. Add certificate PDFs under:
+
+```text
+public/certificates/
+```
 
 ## Deployment
 

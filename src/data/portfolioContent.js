@@ -11,7 +11,7 @@ export const portfolioContent = {
     { label: "About", href: "#about" },
     { label: "Skills", href: "#skills" },
     { label: "Projects", href: "#projects" },
-    { label: "Labs", href: "#labs" },
+    { label: "Certificates", href: "#certificates" },
     { label: "Contact", href: "#contact" },
   ],
   socialLinks: [
@@ -38,7 +38,7 @@ export const portfolioContent = {
     metrics: [
       { label: "Security posture", value: "92%", detail: "Placeholder score" },
       { label: "Build status", value: "Green", detail: "CI/CD ready" },
-      { label: "Learning mode", value: "Active", detail: "Labs weekly" },
+      { label: "Learning mode", value: "Active", detail: "Certs planned" },
     ],
   },
   about: {
@@ -48,7 +48,7 @@ export const portfolioContent = {
     highlights: [
       "Interested in CI/CD, infrastructure automation, and secure deployment workflows.",
       "Practicing vulnerability assessment, web security basics, and defensive monitoring.",
-      "Comfortable learning in public through documented projects, labs, and GitHub repositories.",
+      "Comfortable learning in public through documented projects and GitHub repositories.",
     ],
   },
   skills: [
@@ -99,22 +99,29 @@ export const portfolioContent = {
     },
   ],
   certifications: [
-    { name: "Google Cybersecurity Certificate", issuer: "Google", status: "Planned" },
-    { name: "AWS Cloud Practitioner", issuer: "AWS", status: "Planned" },
-    { name: "TryHackMe Learning Path", issuer: "TryHackMe", status: "In Progress" },
-  ],
-  labs: [
     {
-      title: "Linux Hardening Checklist",
-      summary: "Placeholder notes for users, permissions, SSH, firewall, and update hygiene.",
+      name: "Google Cybersecurity Certificate",
+      issuer: "Google",
+      status: "Planned",
+      issued: "Add date",
+      pdfPath: "/certificates/google-cybersecurity.pdf",
+      credentialUrl: "#",
     },
     {
-      title: "SIEM / Log Monitoring Mini Lab",
-      summary: "Placeholder notes for collecting, reading, and escalating suspicious log events.",
+      name: "AWS Cloud Practitioner",
+      issuer: "AWS",
+      status: "Planned",
+      issued: "Add date",
+      pdfPath: "/certificates/aws-cloud-practitioner.pdf",
+      credentialUrl: "#",
     },
     {
-      title: "Web Security Practice",
-      summary: "Placeholder notes for OWASP Top 10 basics, testing workflow, and reports.",
+      name: "TryHackMe Learning Path",
+      issuer: "TryHackMe",
+      status: "In Progress",
+      issued: "Add date",
+      pdfPath: "/certificates/tryhackme-learning-path.pdf",
+      credentialUrl: "#",
     },
   ],
   education: [
