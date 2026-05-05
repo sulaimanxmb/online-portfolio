@@ -62,6 +62,8 @@ Certificate PDF paths are also managed in `src/data/portfolioContent.js`. Add ce
 public/certificates/
 ```
 
+Resume and certificate PDFs in `public/` are intended to be tracked in Git because they are public portfolio assets.
+
 ## Deployment
 
 This project is configured for Netlify with `netlify.toml`.
