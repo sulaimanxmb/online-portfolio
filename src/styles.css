@@ -645,6 +645,26 @@ a {
   font-weight: 850;
 }
 
+.project-topline .status-pill.status-completed {
+  border-color: color-mix(in srgb, #21c875 62%, var(--line));
+  background: color-mix(in srgb, #21c875 24%, transparent);
+  color: #7dffb2;
+}
+
+.project-topline .status-pill.status-in-progress {
+  border-color: color-mix(in srgb, #ff9b24 66%, var(--line));
+  background: color-mix(in srgb, #ff9b24 24%, transparent);
+  color: #ffc46f;
+}
+
+:root[data-theme="light"] .project-topline .status-pill.status-completed {
+  color: #08743e;
+}
+
+:root[data-theme="light"] .project-topline .status-pill.status-in-progress {
+  color: #9b5200;
+}
+
 .project-topline {
   display: flex;
   align-items: center;

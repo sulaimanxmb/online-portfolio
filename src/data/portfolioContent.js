@@ -1,10 +1,10 @@
 export const portfolioContent = {
   personal: {
-    name: "Sulaiman Eksambi",
+    name: "Mohammed Sulaiman Eksambi",
     initials: "SE",
     role: "DevOps & Cybersecurity Fresher",
     location: "India",
-    email: "your.email@example.com",
+    email: "sulaimaneksambi@gmail.com",
     resumePath: "/Resume.pdf",
   },
   navigation: [
@@ -15,10 +15,10 @@ export const portfolioContent = {
     { label: "Contact", href: "#contact" },
   ],
   socialLinks: [
-    { label: "GitHub", href: "https://github.com/your-username", type: "github" },
+    { label: "GitHub", href: "https://github.com/sulaimanxmb", type: "github" },
     {
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/your-profile",
+      href: "https://www.linkedin.com/in/mohammed-sulaiman-eksambi/",
       type: "linkedin",
     },
   ],
@@ -58,7 +58,7 @@ export const portfolioContent = {
     },
     {
       category: "Cloud & Hosting",
-      items: ["Netlify", "AWS Basics", "Cloud Concepts", "DNS Basics"],
+      items: ["AWS", "Cloud Concepts", "DNS Basics"],
     },
     {
       category: "Cybersecurity",
@@ -102,10 +102,10 @@ export const portfolioContent = {
     {
       name: "Google Cybersecurity Certificate",
       issuer: "Google",
-      status: "Planned",
-      issued: "Add date",
-      pdfPath: "/certificates/google-cybersecurity.pdf",
-      credentialUrl: "#",
+      status: "Completed",
+      issued: "27th Feb 2026",
+      pdfPath: "/certificates/google-certification.pdf",
+      credentialUrl: "https://www.coursera.org/account/accomplishments/professional-cert/GJGAYXZ55TWI",
     },
     {
       name: "AWS Cloud Practitioner",
@@ -114,20 +114,12 @@ export const portfolioContent = {
       issued: "Add date",
       pdfPath: "/certificates/aws-cloud-practitioner.pdf",
       credentialUrl: "#",
-    },
-    {
-      name: "TryHackMe Learning Path",
-      issuer: "TryHackMe",
-      status: "In Progress",
-      issued: "Add date",
-      pdfPath: "/certificates/tryhackme-learning-path.pdf",
-      credentialUrl: "#",
-    },
+    }
   ],
   education: [
     {
-      degree: "Your Degree / Program",
-      institution: "Your College or University",
+      degree: "B.tech in Computer Science and Cybersecurity",
+      institution: "Dayananada Sagar University",
       year: "2026",
       details: "Relevant coursework: networking, operating systems, cloud, and security basics.",
     },
@@ -136,7 +128,7 @@ export const portfolioContent = {
     heading: "Contact",
     summary:
       "Open to fresher DevOps, Cybersecurity, Cloud, and technical support opportunities.",
-    emailLabel: "your.email@example.com",
+    emailLabel: "sulaimaneksambi@gmail.com",
     availability: "Available for internships and entry-level roles",
   },
 };

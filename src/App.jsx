@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 import { portfolioContent } from "./data/portfolioContent";
 
-const THEME_KEY = "portfolio-theme";
+const THEME_KEY = "portfolio-theme-v2";
 
 function getInitialTheme() {
   if (typeof window === "undefined") {
@@ -30,9 +30,7 @@ function getInitialTheme() {
     return storedTheme;
   }
 
-  return window.matchMedia("(prefers-color-scheme: light)").matches
-    ? "light"
-    : "dark";
+  return "light";
 }
 
 function App() {
@@ -256,6 +254,10 @@ function ProjectsSection() {
   );
 }
 
+function getCertificateStatusClass(status) {
+  return `status-${status.toLowerCase().replace(/\s+/g, "-")}`;
+}
+
 function CertificationsSection() {
   return (
     <section className="page-section" id="certificates">
@@ -274,7 +276,9 @@ function CertificationsSection() {
             </div>
             <div className="certificate-body">
               <div className="project-topline">
-                <span>{certification.status}</span>
+                <span className={`status-pill ${getCertificateStatusClass(certification.status)}`}>
+                  {certification.status}
+                </span>
                 <Award size={18} />
               </div>
               <h3>{certification.name}</h3>
@@ -285,7 +289,7 @@ function CertificationsSection() {
                   Open PDF <ArrowUpRight size={16} />
                 </a>
                 <a href={certification.credentialUrl}>
-                  Credential <ArrowUpRight size={16} />
+                  Credentials <ArrowUpRight size={16} />
                 </a>
               </div>
             </div>
