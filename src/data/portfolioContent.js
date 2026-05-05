@@ -54,7 +54,7 @@ export const portfolioContent = {
   skills: [
     {
       category: "DevOps",
-      items: ["Git", "GitHub", "CI/CD", "Docker", "Linux", "Bash"],
+      items: ["Git", "GitHub", "CI/CD", "Docker", "Linux", "Python"],
     },
     {
       category: "Cloud & Hosting",
@@ -66,7 +66,7 @@ export const portfolioContent = {
     },
     {
       category: "Tools",
-      items: ["Nmap", "Wireshark", "Burp Suite", "Metasploit", "GitHub Actions"],
+      items: ["Nmap", "Caido", "Metasploit", "Jenkins"],
     },
   ],
   projects: [
