@@ -89,13 +89,12 @@ export const portfolioContent = {
       demo: "#",
     },
     {
-      title: "Vulnerability Scanning Lab",
-      status: "Placeholder",
+      title: "Technical Blog",
       summary:
-        "A controlled lab documenting scanning workflow, findings, severity notes, and remediation recommendations.",
-      tech: ["Nmap", "OWASP", "Burp Suite"],
-      repo: "https://github.com/your-username/project-repo",
-      demo: "#",
+        "This is a Technical Blog by me where I track my journey while learning anything new",
+      tech: ["Github Pages", "Github Actions", "Obsidian", "Quartz"],
+      repo: "https://github.com/sulaimanxmb/Notes",
+      demo: "https://sulaimanxmb.github.io/Notes/",
     },
   ],
   certifications: [
