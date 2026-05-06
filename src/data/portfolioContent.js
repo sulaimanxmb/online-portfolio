@@ -23,10 +23,10 @@ export const portfolioContent = {
     },
   ],
   hero: {
-    eyebrow: "Fresher focused on secure, automated infrastructure",
+    eyebrow: "Hi, I am Mohammed Sulaiman Eksambi.",
     title: "Building reliable pipelines and security-minded systems.",
     summary:
-      "I am a DevOps and Cybersecurity fresher who enjoys turning Linux, cloud, automation, and security fundamentals into practical, documented projects.",
+      "A DevOps and Cybersecurity fresher focused on Linux, cloud, automation, secure deployment workflows, and practical hands-on projects.",
     primaryAction: { label: "View Projects", href: "#projects" },
     secondaryAction: { label: "Download Resume", href: "/Resume.pdf" },
     terminalLines: [
