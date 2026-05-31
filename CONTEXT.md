@@ -1,7 +1,7 @@
 # Project Context
 
 ## 1. Overview
-- Personal online portfolio for Mohammed Sulaiman Eksambi, a fresher focused on DevOps and Cybersecurity.
+- Personal online portfolio for Mohammed Sulaiman Eksambi, focused on cybersecurity, cloud infrastructure, DevOps, and practical technical projects.
 - Presents profile summary, skills, projects, certificates, education, resume, and contact links in a responsive single-page site.
 - Intended to be hosted on Netlify from the GitHub repository `sulaimanxmb/online-portfolio`.
 

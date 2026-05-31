@@ -11,7 +11,7 @@
 - Sticky top navigation bar sits inside the page shell.
 - Left side shows a square `SE` brand mark, then:
   - `Mohammed Sulaiman Eksambi`
-  - `DevOps & Cybersecurity Fresher`
+  - `Cybersecurity and Cloud infrastructure Specialist`
 - Center navigation links:
   - `About`
   - `Skills`
@@ -63,7 +63,7 @@
 - Right side shows three highlighted cards:
   - `Interested in CI/CD, infrastructure automation, and secure deployment workflows.`
   - `Practicing vulnerability assessment, web security basics, and defensive monitoring.`
-  - `Comfortable learning in public through documented projects and GitHub repositories.`
+  - `When I'm not configuring servers, you can usually find me analyzing Real Madrid's weekend tactics or playing Saturday football.`
 
 ## 4. Skills Section
 - Section heading:

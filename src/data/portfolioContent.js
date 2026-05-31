@@ -2,7 +2,7 @@ export const portfolioContent = {
   personal: {
     name: "Mohammed Sulaiman Eksambi",
     initials: "SE",
-    role: "DevOps & Cybersecurity Fresher",
+    role: "Cybersecurity and Cloud infrastructure Specialist",
     location: "India",
     email: "sulaimaneksambi@gmail.com",
     resumePath: "/Resume.pdf",
@@ -48,7 +48,7 @@ export const portfolioContent = {
     highlights: [
       "Interested in CI/CD, infrastructure automation, and secure deployment workflows.",
       "Practicing vulnerability assessment, web security basics, and defensive monitoring.",
-      "Comfortable learning in public through documented projects and GitHub repositories.",
+      "When I'm not configuring servers, you can usually find me analyzing Real Madrid's weekend tactics or playing Saturday football.",
     ],
   },
   skills: [
